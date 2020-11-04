@@ -83,4 +83,4 @@ My first simple cloud infrastructure build with Google Cloud Platform
 7. Create HTTPS and HTTP Load balancer, making sure to redirect HTTP traffic to HTTPS, enable Cloud CDN and adding the SSL certificate created in the previous step.
 
 ## Diagram
-![GCP Infrastructure Diagram](http://url/to/img.png)
+![GCP Infrastructure Diagram](https://github.com/RWEngelbrecht/cloud-1/blob/main/cloud1_gcp_diagram.png)
