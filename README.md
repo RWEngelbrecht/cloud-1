@@ -67,4 +67,17 @@ My first simple cloud infrastructure build with Google Cloud Platform
     3. Turn on Autoscaling.
     4. Set minimum and maximum number of instances as required.
     5. Create new health check for group.
-5. 
+5. Create firewall rule for external frontend access:
+    1. From VPC Network > Firewall, create firewall rule.
+    2. Set Direction to 'Ingress'.
+    3. Allow Action on Match.
+    4. Target all instances.
+    5. Set Source Filter to IP Range.
+    6. Set the range to `130.211.0.0./22`, `35.191.0.0/16`.
+    7. Check TCP and set to port 80.
+6. Set up GCP managed SSL certificate:
+    1. From Network services > Load balancing, follow the 'advanced menu' link.
+    2. From Certificates tab, create ssl certificate.
+    3. Check 'Google-managed certificate'.
+    4. Add appropriate domain name/IP.
+7. Create HTTPS and HTTP Load balancer, making sure to redirect HTTP traffic to HTTPS, enable Cloud CDN and adding the SSL certificate created in the previous step.
