@@ -17,4 +17,7 @@ My first simple cloud infrastructure build with Google Cloud Platform
         3. SSH into WP instance.
         - Note: to change the following files, you need to be logged in as super user.
         4. Add the following to `wp-config.php`:
-           ``````
+           ```
+           define( 'AS3CF_SETTINGS', serialize( array('provider' => 
+            'gcp', 'key-file-path' => '/etc/file.json',) ) );
+           ```
