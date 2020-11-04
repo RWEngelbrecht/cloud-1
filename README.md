@@ -81,3 +81,6 @@ My first simple cloud infrastructure build with Google Cloud Platform
     3. Check 'Google-managed certificate'.
     4. Add appropriate domain name/IP.
 7. Create HTTPS and HTTP Load balancer, making sure to redirect HTTP traffic to HTTPS, enable Cloud CDN and adding the SSL certificate created in the previous step.
+
+## Diagram
+![GCP Infrastructure Diagram](http://url/to/img.png)
