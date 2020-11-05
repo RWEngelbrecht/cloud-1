@@ -1,6 +1,8 @@
 # cloud-1
 My first simple cloud infrastructure build with Google Cloud Platform
 
+> Note: During peer evaluation of this project, the hosted WordPress site will be accessible at https://rwengelbrecht.co.za/. However, this will not be the case after successful validation of the project.
+
 ## Requirements:
 - At least 2 running instances of website at all times.
 - Evenly distribute traffic between active instances.
